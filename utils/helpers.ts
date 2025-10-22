@@ -1,6 +1,10 @@
-import type { Tables } from '@/types_db';
-
-type Price = Tables<'prices'>;
+type Price = {
+  id?: string;
+  product_id?: string;
+  unit_amount?: number;
+  currency?: string;
+  [key: string]: unknown;
+};
 
 /**
  * Constructs the full URL for the application.

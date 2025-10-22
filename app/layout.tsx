@@ -9,7 +9,6 @@ import { Suspense } from 'react';
 
 import { CookieConsentProvider } from '@/components/providers/cookie-consent-provider';
 import { Footer } from '@/components/design-systems/radiant/footer';
-import { IntercomProvider } from '@/components/providers/IntercomProvider';
 import { Navbar } from '@/components/design-systems/radiant/navbar';
 import { ThemeProvider } from '@/components/providers/theme-provider';
 import { Toaster } from '@/components/ui/feedback/toasts/toaster';

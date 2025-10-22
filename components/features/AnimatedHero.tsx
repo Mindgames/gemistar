@@ -3,6 +3,7 @@
 import { useEffect, useRef } from 'react';
 
 import { animate } from 'animejs';
+import type { DurationKeyframes } from 'animejs';
 
 const blobPalette = [
   'radial-gradient(circle at 30% 30%, rgba(112,157,255,0.55), rgba(54,87,179,0.28) 55%, rgba(10,18,42,0) 80%)',
@@ -38,7 +39,7 @@ const trailPositions = [
 const randomBetween = (min: number, max: number) =>
   Math.random() * (max - min) + min;
 
-const createBlobFrames = () => [
+const createBlobFrames = (): DurationKeyframes => [
   {
     x: randomBetween(-80, 80),
     y: randomBetween(-80, 80),
@@ -55,7 +56,7 @@ const createBlobFrames = () => [
   }
 ];
 
-const createSparkFrames = () => [
+const createSparkFrames = (): DurationKeyframes => [
   {
     x: randomBetween(-40, 40),
     y: randomBetween(-40, 40),
@@ -70,7 +71,7 @@ const createSparkFrames = () => [
   }
 ];
 
-const createTrailFrames = () => [
+const createTrailFrames = (): DurationKeyframes => [
   {
     translateX: randomBetween(-20, 20),
     translateY: randomBetween(-80, 80),
@@ -86,7 +87,7 @@ const createTrailFrames = () => [
 ];
 
 const runLoopingAnimation = (
-  createFrames: () => Record<string, unknown>[],
+  createFrames: () => DurationKeyframes,
   options: {
     target: HTMLElement;
     baseDuration: number;
@@ -98,9 +99,11 @@ const runLoopingAnimation = (
   let control: ReturnType<typeof animate> | undefined;
 
   const play = () => {
+    const computedDuration =
+      randomBetween(baseDuration * 0.7, baseDuration * 1.3) * multiplier;
     control = animate(target, {
       keyframes: createFrames(),
-      duration: randomBetween(baseDuration * 0.7, baseDuration * 1.3),
+      duration: computedDuration,
       ease: 'inOutSine',
       alternate: true,
       loop: 2,
