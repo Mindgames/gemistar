@@ -40,7 +40,7 @@ export const metadata: Metadata = {
 
   // ~159 chars for SERP (concise, benefit-led, no jargon)
   description:
-    'Gamistar is an AI Agent that sits on top of your chats—drafts in your voice, remembers context, and schedules follow‑ups. Local‑first by default; no integrations.',
+    'Gamistar delivers evolving AI solutions for iGaming, elevating player engagement and streamlining operations for modern gaming brands.',
 
   // Helpful but not spammy
   keywords: [
@@ -109,7 +109,7 @@ export const metadata: Metadata = {
     locale: 'en_US',
     title: 'Gamistar: AI Agent for your chats — win every conversation',
     description:
-      'Gamistar is an AI Agent that sits on top of your chats—drafts in your voice, remembers context, and schedules follow‑ups. Local‑first by default; no integrations.',
+      'Gamistar delivers evolving AI solutions for iGaming, elevating player engagement and streamlining operations for modern gaming brands.',
     images: [
       {
         url: '/og_gamistar.png',
@@ -125,7 +125,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Gamistar: AI Agent for your chats — win every conversation',
     description:
-      'Gamistar is an AI Agent that sits on top of your chats—drafts in your voice, remembers context, and schedules follow‑ups. Local‑first by default; no integrations.',
+      'Gamistar delivers evolving AI solutions for iGaming, elevating player engagement and streamlining operations for modern gaming brands.',
     images: ['/og_gamistar.png']
     // site: '@your_handle',      // add when ready
     // creator: '@your_handle'    // add when ready
