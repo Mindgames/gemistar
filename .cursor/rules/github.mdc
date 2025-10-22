@@ -1,0 +1,50 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+# GitHub Workflow Rules for AI Agent
+
+## Repository Context
+
+Github information used with Github tool
+Repo name: gamistar-website
+Full url: https://github.com/Replypilot/gamistar-website
+
+-# GitHub Workflow Rules for AI Agen
+
+## Repository Context
+- **Repository**: `gamistar-website`
+- **URL**: https://github.com/Replypilot/gamistar-website
+- **Always** interact via the GitHub tool.
+
+## Branching
+- **Do NOT** create branches in the GitHub UI.
+- If instructed to “create a branch”, run
+  `git checkout -b <branch-name>` locally, then
+  `git push origin <branch-name>`.
+- When asked to commit or open a PR, **determine the current branch yourself** (via `git rev-parse --abbrev-ref HEAD` or GitHub API); do **not** ask which branch.
+
+## Pull Requests
+- When told to open a PR and a branch name is provided, assume that branch already exists on the remote.
+- Target branch: **main** (unless explicitly stated otherwise).
+- PR must:
+  - Reference related issue(s) (e.g., `Closes #123`).
+  - Have a concise, descriptive title.
+  - Contain a clear description of work done and a **changelog** section.
+
+## Commits
+- Stage: `git add -A`
+- Commit: `git commit -m "<type>: <lower‑case summary>"`
+  - Use Conventional Commit types (`fix`, `feat`, `chore`, etc.).
+- Push: `git push origin <branch-name>`
+
+## Issues
+- Provide a detailed description, context, and acceptance criteria.
+- Include task checklists (`- [ ] …`).
+
+## Expectations
+- Execute these steps silently—no extra commentary.
+- Never ask for the current branch; detect it automatically whenever committing or opening PRs.
+- Follow every rule above on each interaction with the repository.
+- Provide me with link to the Pull Request or Issue, whatever you create

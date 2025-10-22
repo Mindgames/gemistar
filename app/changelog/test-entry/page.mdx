@@ -1,0 +1,21 @@
+import ChangelogPostLayout from '@/components/changelog/ChangelogPostLayout';
+
+export const metadata = {
+  title: 'Test Changelog Entry',
+  version: '0.0',
+  summary: 'Placeholder entry to validate the changelog rendering pipeline.',
+  description: 'This entry remains so designers and developers can verify styling without exposing real updates.',
+  date: '2025-01-01',
+  tags: ['internal'],
+  openGraph: {
+    images: '/og_gamistar.png'
+  }
+};
+
+export default function Page({ children }) {
+  return <ChangelogPostLayout metadata={metadata}>{children}</ChangelogPostLayout>;
+}
+
+## Testing Only
+
+This changelog item is a test placeholder kept while production entries are offline.

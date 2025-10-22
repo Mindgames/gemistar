@@ -1,0 +1,19 @@
+import BlogPostLayout from '@/components/blog/BlogPostLayout';
+
+export const metadata = {
+  title: 'Test Blog Post',
+  date: '2025-01-01',
+  description: 'Placeholder entry used for development and visual testing.',
+  categories: ['internal'],
+  openGraph: {
+    images: '/og_gamistar.png'
+  }
+};
+
+export default function Page({ children }) {
+  return <BlogPostLayout>{children}</BlogPostLayout>;
+}
+
+## Placeholder Entry
+
+This test article keeps the blog pipeline active while real content is offline.

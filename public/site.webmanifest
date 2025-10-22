@@ -1,0 +1,22 @@
+{
+  "name": "Gamistar",
+  "short_name": "Gamistar",
+  "description": "Gamistar is an AI agent that drafts in your voice, remembers context, and keeps conversations moving.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0B0B0F",
+  "icons": [
+    {
+      "src": "/icon-128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-34.png",
+      "sizes": "34x34",
+      "type": "image/png"
+    }
+  ]
+}

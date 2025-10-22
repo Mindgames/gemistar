@@ -1,0 +1,11 @@
+# robots.txt for https://gemistar.com
+
+# Block all crawlers from accessing sensitive or build-only routes
+User-agent: *
+Disallow: /account
+Disallow: /.next/
+Allow: /
+
+# Sitemap
+Sitemap: https://gemistar.com/sitemap.xml
+
