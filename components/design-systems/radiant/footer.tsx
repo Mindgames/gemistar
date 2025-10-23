@@ -11,7 +11,7 @@ export function Footer(): React.JSX.Element {
   return (
     <footer
       id="footer"
-      className="mt-24 w-full border-t border-white/10 bg-[#010005] pt-16 text-white"
+      className="w-full border-t border-white/10 bg-[#010005] pt-16 text-white"
     >
       <div className="mx-auto max-w-6xl px-6 pb-14">
         <div className="grid gap-12 md:grid-cols-3">

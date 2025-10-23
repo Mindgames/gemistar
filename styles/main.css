@@ -329,18 +329,18 @@ summary {
     background: linear-gradient(
       90deg,
       hsl(var(--muted-foreground) / 0.6) 0%,
-      hsl(var(--muted-foreground) / 0.6) 45%,
+      hsl(var(--muted-foreground) / 0.6) 48%,
       hsl(var(--foreground)) 50%,
-      hsl(var(--muted-foreground) / 0.6) 55%,
+      hsl(var(--muted-foreground) / 0.6) 52%,
       hsl(var(--muted-foreground) / 0.6) 100%
     );
-    background-size: 350% 100%;
+    background-size: 260% 100%;
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent !important;
     -webkit-text-fill-color: transparent;
     display: inline-block;
-    animation: shimmer-4-animation 9s linear infinite;
+    animation: shimmer-4-animation 11s linear infinite;
     will-change: background-position;
   }
 
@@ -348,12 +348,12 @@ summary {
     background: linear-gradient(
       90deg,
       hsl(var(--muted-foreground) / 0.6) 0%,
-      hsl(var(--muted-foreground) / 0.6) 42%,
+      hsl(var(--muted-foreground) / 0.6) 48%,
       hsl(var(--foreground)) 50%,
-      hsl(var(--muted-foreground) / 0.6) 58%,
+      hsl(var(--muted-foreground) / 0.6) 52%,
       hsl(var(--muted-foreground) / 0.6) 100%
     );
-    background-size: 350% 100%;
+    background-size: 260% 100%;
     background-clip: text;
     -webkit-background-clip: text;
   }
@@ -361,10 +361,10 @@ summary {
 
 @keyframes shimmer-4-animation {
   0% {
-    background-position: 100% 50%;
+    background-position: -20% 50%;
   }
   100% {
-    background-position: 0% 50%;
+    background-position: 120% 50%;
   }
 }
 

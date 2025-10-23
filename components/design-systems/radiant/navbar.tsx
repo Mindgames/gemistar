@@ -10,8 +10,8 @@ import { cn } from '@/utils/cn';
  */
 export function Navbar(): React.JSX.Element {
   return (
-    <header className={cn('fixed inset-x-0 top-0 z-50 px-6 py-6')}>
-      <div className="mx-auto flex w-full max-w-6xl items-center justify-between rounded-full border border-white/15 bg-[#0c0f1b]/80 px-6 py-3 text-white shadow-[0_18px_46px_-24px_rgba(40,60,120,0.45)] backdrop-blur-xl">
+    <header className={cn('relative z-50 px-6 py-6')}>
+      <div className="mx-auto flex w-full max-w-6xl items-center justify-between rounded-full border border-white/25 bg-[#0c0f1b]/60 px-6 py-3 text-white shadow-[0_18px_46px_-24px_rgba(40,60,120,0.45)] backdrop-blur-xl">
         <Link
           href="/"
           className="text-lg font-semibold tracking-tight transition-colors hover:text-blue-200 md:text-xl"

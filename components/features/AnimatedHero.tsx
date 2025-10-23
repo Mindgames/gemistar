@@ -5,6 +5,8 @@ import { useEffect, useRef } from 'react';
 import { animate } from 'animejs';
 import type { DurationKeyframes } from 'animejs';
 
+import { Navbar } from '@/components/design-systems/radiant/navbar';
+
 const blobPalette = [
   'radial-gradient(circle at 30% 30%, rgba(112,157,255,0.55), rgba(54,87,179,0.28) 55%, rgba(10,18,42,0) 80%)',
   'radial-gradient(circle at 70% 40%, rgba(98,143,255,0.55), rgba(70,110,210,0.28) 60%, rgba(18,28,60,0) 88%)',
@@ -177,7 +179,7 @@ export function AnimatedHero(): React.JSX.Element {
   }, []);
 
   return (
-    <section className="relative isolate flex min-h-screen items-center justify-center overflow-hidden bg-gradient-to-b from-[#01010a] via-[#020414] to-[#010009] pt-28 pb-24">
+    <section className="relative isolate flex min-h-screen flex-col overflow-hidden bg-gradient-to-b from-[#01010a] via-[#020414] to-[#010009] pb-24">
       <div
         ref={fieldRef}
         className="pointer-events-none absolute inset-0 overflow-hidden"
@@ -228,11 +230,19 @@ export function AnimatedHero(): React.JSX.Element {
           />
         ))}
       </div>
+      <div className="relative z-20">
+        <Navbar />
+      </div>
 
-      <div className="relative z-10 px-6 text-center">
-        <h1 className="bg-gradient-to-br from-[#b2c8ff] via-[#f4f7ff] to-[#7081ff] bg-clip-text text-5xl font-semibold tracking-tight text-transparent drop-shadow-[0_0_18px_rgba(120,150,255,0.25)] sm:text-6xl md:text-7xl">
-          Gamistar
-        </h1>
+      <div className="relative z-10 flex flex-1 items-center justify-center px-6 text-center">
+        <div>
+          <h1 className="bg-gradient-to-br from-[#b2c8ff] via-[#f4f7ff] to-[#7081ff] bg-clip-text text-5xl font-semibold tracking-tight text-transparent drop-shadow-[0_0_18px_rgba(120,150,255,0.25)] sm:text-6xl md:text-7xl">
+            Gamistar
+          </h1>
+          <p className="mt-[-12px] text-base font-normal shimmer-4 sm:text-lg">
+            Very intelligent systems.
+          </p>
+        </div>
       </div>
     </section>
   );
