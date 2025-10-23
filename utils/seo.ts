@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import { getURL } from './helpers';
 
 const SITE_NAME = 'Gamistar';
-const DEFAULT_OG_IMAGE = '/og_gamistar.png';
+const DEFAULT_OG_IMAGE = '/og.png';
 
 type OpenGraphType = NonNullable<Metadata['openGraph']> extends infer OG
   ? OG extends { type?: infer T }

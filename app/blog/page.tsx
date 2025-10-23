@@ -53,7 +53,7 @@ const getFirstImage = (images: string | string[]): string => {
   if (typeof images === 'string') {
     return images;
   }
-  return images.length > 0 ? images[0] : '/og_gamistar.png'; // fallback image
+  return images.length > 0 ? images[0] : '/og.png'; // fallback image
 };
 
 /**

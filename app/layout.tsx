@@ -111,7 +111,7 @@ export const metadata: Metadata = {
       'Gamistar delivers evolving AI solutions for iGaming, elevating player engagement and streamlining operations for modern gaming brands.',
     images: [
       {
-        url: '/og_gamistar.png',
+        url: '/og.png',
         width: 1200,
         height: 630,
         alt: 'Gamistar—AI Agent overlay that drafts in your voice and schedules follow‑ups'
@@ -125,7 +125,7 @@ export const metadata: Metadata = {
     title: 'Gamistar: AI Agent for your chats — win every conversation',
     description:
       'Gamistar delivers evolving AI solutions for iGaming, elevating player engagement and streamlining operations for modern gaming brands.',
-    images: ['/og_gamistar.png']
+    images: ['/og.png']
     // site: '@your_handle',      // add when ready
     // creator: '@your_handle'    // add when ready
   },
