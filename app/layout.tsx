@@ -141,7 +141,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html lang="en" className="dark">
       <head>
-        <GoogleTagManager gtmId="GTM-PBSS8DB6" />
+        <GoogleTagManager gtmId="GTM-TSPNLSLQ" />
       </head>
       <body
         className={cn(
